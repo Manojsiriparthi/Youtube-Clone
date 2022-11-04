@@ -1,0 +1,18 @@
+.recommendedVideo {
+    flex: 0.8;
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 14px;
+    color: #0f0f0f;
+}
+
+.scrollbarContainer {
+    display: flex;
+}
+
+.scrollComponent {
+    padding-right: 10px;;
+}
+.videoCards__alignment{
+    display: flex;
+    flex-wrap: wrap;
+}

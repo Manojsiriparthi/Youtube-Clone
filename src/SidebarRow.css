@@ -1,0 +1,25 @@
+.sidebarRow {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sidebarRow:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.sidebarRow__icon {
+    
+}
+
+.sidebarRow__title {
+    margin-left: 25px;
+}
+
+.sidebarRow.selected {
+    background-color: #f0f0f0;
+}
