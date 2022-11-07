@@ -40,6 +40,13 @@
     align-items: center;
     width: 40%;
     border: 1px solid grey;
+    /* border-radius: 40px 0 0 40px; */
+}
+
+.input__search{
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
 }
 
 .header__inputButton{
@@ -47,11 +54,24 @@
     background-color: #fafafa !important;
     border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;
-    color: gray;
+    color: black;
+    padding: 10px;
+}
+
+.header__inputButton:hover {
+    cursor: pointer;
+    background-color: #f0f0f0 !important; 
 }
 
 .mic {
-    margin-left: 15px;
+    padding: 10px;
+}
+
+.mic:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    padding: 10px;
 }
 
 .header__icons {
@@ -62,6 +82,14 @@
 
 .header__icon {
     margin-right: 20px;
+    padding: 10px;
+} 
+
+.header__icon:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    padding: 10px;
 } 
 
 .header__input > input {

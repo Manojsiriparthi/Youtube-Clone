@@ -9,6 +9,7 @@
 
 .scrollbar:hover{
     background-color: lightgray;
+    cursor: pointer;
 }
 
 .scrollbar.selected {

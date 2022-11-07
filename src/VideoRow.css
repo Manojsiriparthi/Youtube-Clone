@@ -1,0 +1,34 @@
+.videoRow {
+    display: flex;
+}
+
+.videoRow > img {
+    object-fit: contain;
+    width: 360px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 10px  !important;
+}
+
+.videoRow__text {
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.videoRow__text > p {
+    color: #606060;
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+}
+
+.videoRow__text > h3 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.videoRow_headline {
+    padding: 12px 0px;
+}

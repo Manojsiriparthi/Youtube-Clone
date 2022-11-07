@@ -1,0 +1,32 @@
+.searchPage {
+    flex: 0.8;
+    font-family: "Roboto","Arial",sans-serif;
+    padding: 10px 20px;
+    max-width: 70%;
+}
+
+.searchPage__filter {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    line-height: 36px;
+    width: 10%;
+    border-radius: 40px;
+    padding: 5px 12px;
+}
+
+.searchPage__filter:hover {
+    background-color: #f0f0f0;
+}
+
+.searchPage__filter > h2 {
+    margin-left: 10px;
+}
+
+.searchPage_hr{
+    margin-right: 50px;
+    height: 1px;
+    border: 0;
+    background-color: lightgray;
+    margin-bottom: 10px;
+}

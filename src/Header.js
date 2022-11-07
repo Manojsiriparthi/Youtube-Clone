@@ -1,29 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; 
 import './Header.css';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import VideoCallOutlinedIcon from '@mui/icons-material/VideoCallOutlined';
-import MicOutlinedIcon from '@mui/icons-material/MicOutlined';
+// import MicOutlinedIcon from '@mui/icons-material/MicOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import { Avatar } from '@mui/material';
 
 
+
 function Header() {
+    const [inputSearch, setInputSearch] = useState("");
+
     return (
         <div className="header">
             <div className="header__left">
                 <MenuOutlinedIcon className='menuIcon' />
+                <Link to="/">
                 <img
                     alt="YouTube Logo"
                     className="header__logo"
                     src="https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6.jpg" />
-
+                </Link>
             </div>
 
             <div className="header__input">
-            <input  placeholder='Search' type="text" />
+            <input 
+                onChange={e => setInputSearch(e.target.value)} 
+                value={inputSearch}
+                className='input__search' 
+                placeholder='Search' 
+                type="text" 
+            />
+            <Link to={`/search/${inputSearch}`}>
             <SearchIcon className=' header__inputButton'/>
-            <MicOutlinedIcon className='mic'/>
+            </Link>
+            {/* <MicOutlinedIcon className='mic'/> */}
             </div>            
 
             <div className='header__icons'>
