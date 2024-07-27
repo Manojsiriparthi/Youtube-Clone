@@ -49,5 +49,6 @@
     "testPathIgnorePatterns": ["/node_modules/"],
     "moduleFileExtensions": ["js", "jsx", "ts", "tsx", "json", "node"]
   }
+  "homepage": "/myapp"
 }
 
